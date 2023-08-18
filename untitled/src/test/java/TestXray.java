@@ -11,8 +11,13 @@ import org.testng.annotations.Test;
 public class TestXray {
 
     @Test
-    @Requirement(key = "AP-48, AP-49")
+    @XrayTest(key = "AP-48")
     public void test() {
+        System.out.println("Khanh test Xray");
+    }
+
+    @XrayTest(key = "AP-49")
+    public void test2() {
         System.out.println("Khanh test Xray");
     }
 }
