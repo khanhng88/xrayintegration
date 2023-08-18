@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class TestXray {
 
     @Test
-    @XrayTest(key = "FIN-9892")
+    @XrayTest(key = "AP-48")
     public void test() {
         System.out.println("Khanh test Xray");
     }
