@@ -4,6 +4,7 @@ Created by emman at 8/18/2023 7:10 PM
 
 import app.getxray.xray.testng.annotations.Requirement;
 import app.getxray.xray.testng.annotations.XrayTest;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -20,5 +21,6 @@ public class TestXray {
     @XrayTest(key = "AP-49")
     public void test2() {
         System.out.println("Khanh test Xray");
+        Assert.assertTrue(false);
     }
 }
