@@ -16,6 +16,7 @@ public class TestXray {
         System.out.println("Khanh test Xray");
     }
 
+    @Test
     @XrayTest(key = "AP-49")
     public void test2() {
         System.out.println("Khanh test Xray");
