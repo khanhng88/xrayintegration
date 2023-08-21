@@ -1,6 +1,7 @@
-package testxray;
+/*
+Created by emman at 8/21/2023 4:14 PM
+*/
 
-import app.getxray.xray.testng.annotations.Requirement;
 import app.getxray.xray.testng.annotations.XrayTest;
 import io.qameta.allure.TmsLink;
 import io.qameta.allure.TmsLinks;
