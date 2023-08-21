@@ -1,6 +1,4 @@
-package testxray;/*
-Created by emman at 8/18/2023 7:10 PM
-*/
+package testxray;
 
 import app.getxray.xray.testng.annotations.Requirement;
 import app.getxray.xray.testng.annotations.XrayTest;
