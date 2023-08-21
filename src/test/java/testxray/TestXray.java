@@ -1,4 +1,4 @@
-/*
+package testxray;/*
 Created by emman at 8/18/2023 7:10 PM
 */
 
@@ -21,7 +21,7 @@ public class TestXray {
     }
 
     @Test
-    @XrayTest(key = "AP-49, AP-51")
+    @XrayTest(key = "AP-49")
     @TmsLink("AP-49")
     public void test2() {
         System.out.println("Khanh test Xray");
