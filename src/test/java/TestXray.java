@@ -20,13 +20,13 @@ public class TestXray {
     }
 
     @Test
-    @XrayTest(key = "AP-48")
+    @XrayTest(key = "AP-48,AP-49, AP-53,")
     public void test() {
         System.out.println("Khanh test Xray");
     }
 
     @Test
-    @XrayTest(key = "AP-49, AP-53, AP-59")
+    @XrayTest(key = " AP-59")
     public void test2() {
         System.out.println("Khanh test Xray");
         Assert.assertTrue(false);
