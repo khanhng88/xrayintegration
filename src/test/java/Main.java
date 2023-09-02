@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 public class Main {
@@ -139,13 +140,13 @@ public class Main {
 
                 // 3.2 Add info obj
                 if (info == null) {
-                    info = buildInfoSection(objReader, testExecutionId);
+                    info = buildInfoSection(objReader);
                 }
             }
 
-            objWrite.put("testExecutionKey", testExecutionId);
             objWrite.put("tests", tests);
             objWrite.put("info", info);
+            objWrite.put("testExecutionKey", testExecutionId);
 
             // 4. Write JSON
             FileWriter writeJsonFile = new FileWriter("new-xray-report.json");
@@ -164,7 +165,7 @@ public class Main {
 
         Instant instant = Instant.ofEpochMilli(timestamp);
         ZonedDateTime zdt = instant.atZone(ZoneOffset.of("+07:00"));
-        return zdt.toOffsetDateTime().toString();
+        return zdt.truncatedTo(ChronoUnit.SECONDS).toOffsetDateTime().toString();
     }
 
     static JSONArray buildSteps (JSONArray originSteps) {
@@ -200,6 +201,7 @@ public class Main {
             JSONObject runTime = (JSONObject) originObj.get("time");
             JSONObject testStage = (JSONObject) originObj.get("testStage");
             JSONArray originSteps = (JSONArray) testStage.get("steps");
+            String status = testStage.get("status").toString().toUpperCase();
 
             // Create step obj
             JSONObject testCase = new JSONObject();
@@ -207,6 +209,7 @@ public class Main {
             testCase.put("finish", convertTimestampToString(runTime.get("stop").toString()));
             testCase.put("testKey", link.get("name"));
 //            testCase.put("comment", originObj.get("description").toString());
+            testCase.put("status", status);
             testCase.put("steps", buildSteps(originSteps));
 
             // Append to test cases
@@ -216,13 +219,12 @@ public class Main {
         return testCases;
     }
 
-    static JSONObject buildInfoSection (JSONObject originObj, String testExecutionId) {
+    static JSONObject buildInfoSection (JSONObject originObj) {
         JSONObject runTime = (JSONObject) originObj.get("time");
         JSONObject info = new JSONObject();
         info.put("summary", originObj.get("name"));
-        info.put("start", convertTimestampToString(runTime.get("start").toString()));
-        info.put("finish", convertTimestampToString(runTime.get("stop").toString()));
-//        info.put("testKey", testExecutionId);
+        info.put("startDate", convertTimestampToString(runTime.get("start").toString()));
+        info.put("finishDate", convertTimestampToString(runTime.get("stop").toString()));
 
         return info;
     }
