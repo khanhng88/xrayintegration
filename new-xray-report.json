@@ -10,49 +10,26 @@
       "start": "2023-09-02T20:41:07+07:00",
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-59",
-      "steps": [
-        {
-          "action": "Do step 2",
-          "status": "PASSED"
-        },
-        {
-          "action": "Do step 3",
-          "status": "FAILED"
-        }
-      ]
+      "status": "PASSED"
+
     },
     {
       "start": "2023-09-02T20:41:07+07:00",
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-49",
-      "steps": [
-        {
-          "action": "Do step 1",
-          "status": "PASSED"
-        }
-      ]
+      "status": "PASSED"
     },
     {
       "start": "2023-09-02T20:41:07+07:00",
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-48",
-      "steps": [
-        {
-          "action": "Do step 1",
-          "status": "PASSED"
-        }
-      ]
+      "status": "PASSED"
     },
     {
       "start": "2023-09-02T20:41:07+07:00",
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-53",
-      "steps": [
-        {
-          "action": "Do step 1",
-          "status": "PASSED"
-        }
-      ]
+      "status": "PASSED"
     }
   ]
 }
