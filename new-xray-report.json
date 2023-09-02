@@ -11,13 +11,18 @@
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-59",
       "status": "FAILED",
-      "steps": [
-        {
-          "status": "FAILED",
-          "comment": "Create VIN"
-
-        }
-      ]
+      "testInfo": {
+        "summary": "Latest Origin update for delivered vin in shipper",
+        "type": "Manual",
+        "projectKey": "AP",
+        "steps": [
+          {
+            "action": "Create VIN",
+            "data": "",
+            "result": ""
+          }
+        ]
+      }
     },
     {
       "start": "2023-09-02T20:41:07+07:00",
