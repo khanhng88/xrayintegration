@@ -22,6 +22,7 @@ public class TestXray {
 
     @Test
     @XrayTest(key = "AP-48,AP-49, AP-53,")
+    @TmsLinks({@TmsLink("AP-48"), @TmsLink("AP-49"), @TmsLink("AP-53")})
     public void test() {
         System.out.println("Khanh test Xray");
         step_1();
@@ -29,6 +30,7 @@ public class TestXray {
 
     @Test
     @XrayTest(key = " AP-59")
+    @TmsLink("AP-59")
     public void test2() {
         System.out.println("Khanh test Xray");
         step_2();

@@ -63,6 +63,9 @@
                             <value>org.testng.reporters.XMLReporter:generateTestResultAttributes=true</value>
                         </property>
                     </properties>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
 
 
                     <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
@@ -71,6 +74,14 @@
                     <!-- <properties> <property> <name>listener</name> <value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
                         </property> </properties> -->
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.19</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                </dependencies>
 
             </plugin>
         </plugins>
@@ -80,6 +91,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <aspectj.version>1.9.19</aspectj.version>
     </properties>
 
 </project>
