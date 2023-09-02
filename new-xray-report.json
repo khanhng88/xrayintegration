@@ -1,10 +1,10 @@
 {
   "info": {
     "summary": "test2",
-    "start": "2023-09-02T20:41:07+07:00",
-    "finish": "2023-09-02T20:41:07+07:00"
+    "startDate": "2023-09-02T20:41:07+07:00",
+    "finishDate": "2023-09-02T20:41:07+07:00"
   },
-  "testExecutionKey": "",
+  "testExecutionKey": "AP-52",
   "tests": [
     {
       "start": "2023-09-02T20:41:07+07:00",
