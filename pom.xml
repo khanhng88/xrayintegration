@@ -57,10 +57,17 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>
+<!--                    <properties>-->
+<!--                        <property>-->
+<!--                            <name>reporter</name>-->
+<!--                            <value>org.testng.reporters.XMLReporter:generateTestResultAttributes=true</value>-->
+<!--                        </property>-->
+<!--                    </properties>-->
+
                     <properties>
                         <property>
                             <name>reporter</name>
-                            <value>org.testng.reporters.XMLReporter:generateTestResultAttributes=true</value>
+                            <value>app.getxray.xray.testng.listeners.XrayJsonReporter:xrayCloud=true,projectKey=AP</value>
                         </property>
                     </properties>
                     <argLine>
