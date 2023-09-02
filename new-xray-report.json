@@ -37,6 +37,9 @@
       "start": "2023-09-02T20:41:07+07:00",
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-48",
+      "steps": [{
+        "status": "FAILED"
+      }],
       "status": "PASSED"
     },
     {
