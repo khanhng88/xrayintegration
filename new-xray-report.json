@@ -10,7 +10,14 @@
       "start": "2023-09-02T20:41:07+07:00",
       "finish": "2023-09-02T20:41:07+07:00",
       "testKey": "AP-59",
-      "status": "FAILED"
+      "status": "FAILED",
+      "steps": [
+        {
+          "action": "Demo",
+          "data": "",
+          "result": ""
+        }
+      ]
     },
     {
       "start": "2023-09-02T20:41:07+07:00",
