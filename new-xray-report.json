@@ -13,9 +13,9 @@
       "status": "FAILED",
       "steps": [
         {
-          "action": "Demo",
-          "data": "",
-          "result": ""
+          "status": "FAILED",
+          "comment": "Create VIN"
+
         }
       ]
     },
