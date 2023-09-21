@@ -3,11 +3,11 @@
     "description": "",
     "elements": [
       {
-        "start_timestamp": "2023-09-21T07:58:25.925Z",
+        "start_timestamp": "2023-09-21T08:16:13.943Z",
         "before": [
           {
             "result": {
-              "duration": 5476935500,
+              "duration": 6036668100,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 144741100,
+              "duration": 128446300,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 505017000,
+              "duration": 675214500,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 940280600,
+              "duration": 967297500,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 28734600,
+              "duration": 34874200,
               "status": "passed"
             },
             "line": 7,
@@ -68,6 +68,17 @@
               "location": "steps.authentication.LoginStepsDataFileLoad.user_can_see_my_username()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I can verify my login",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.i_can_verify_my_login()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -77,11 +88,11 @@
         ]
       },
       {
-        "start_timestamp": "2023-09-21T07:58:33.038Z",
+        "start_timestamp": "2023-09-21T08:16:21.813Z",
         "before": [
           {
             "result": {
-              "duration": 5979072800,
+              "duration": 4355668100,
               "status": "passed"
             },
             "match": {
@@ -89,14 +100,14 @@
             }
           }
         ],
-        "line": 10,
+        "line": 11,
         "name": "Unsuccessful login",
         "description": "",
         "id": "login-with-external-file;unsuccessful-login",
         "after": [
           {
             "result": {
-              "duration": 122973400,
+              "duration": 120124700,
               "status": "passed"
             },
             "match": {
@@ -109,10 +120,10 @@
         "steps": [
           {
             "result": {
-              "duration": 653697500,
+              "duration": 473893700,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "User navigate to login page",
             "match": {
               "location": "steps.authentication.LoginStepsDataFileLoad.user_navigate_to_login_page()"
@@ -121,10 +132,10 @@
           },
           {
             "result": {
-              "duration": 636037700,
+              "duration": 568315800,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "User enter invalid credential",
             "match": {
               "location": "steps.authentication.LoginStepsDataFileLoad.user_enter_invalid_credential()"
@@ -133,15 +144,26 @@
           },
           {
             "result": {
-              "duration": 33451500,
+              "duration": 81698800,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "User can see error message",
             "match": {
               "location": "steps.authentication.LoginStepsDataFileLoad.user_can_see_error_message()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I cannot verify my login",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.i_cannot_verify_my_login()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
