@@ -1,0 +1,150 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 121388800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseSteps.tearDown()"
+            }
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 5753579400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseSteps.initTest()"
+            }
+          }
+        ],
+        "description": "",
+        "id": "login-with-external-file;success-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Success login",
+        "start_timestamp": "2023-09-21T07:32:43.739Z",
+        "steps": [
+          {
+            "result": {
+              "duration": 730195400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigate to login page",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1168627000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter valid credential",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.user_Enter_Valid_Credential()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41878100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User can see my username",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.user_can_see_my_username()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "start_timestamp": "2023-09-21T07:32:51.578Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5505819400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseSteps.initTest()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Unsuccessful login",
+        "description": "",
+        "id": "login-with-external-file;unsuccessful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 133169400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BaseSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 852398000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User navigate to login page",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 896956400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter invalid credential",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.user_enter_invalid_credential()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36914300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User can see error message",
+            "match": {
+              "location": "steps.authentication.LoginStepsDataFileLoad.user_can_see_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "id": "login-with-external-file",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "login with external file",
+    "tags": [],
+    "uri": "file:src/test/java/features/LoginWithDataFile.feature"
+  }]
