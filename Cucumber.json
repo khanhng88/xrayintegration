@@ -75,7 +75,7 @@
               "status": "passed"
             },
             "line": 9,
-            "name": "I can verify my login with 'OK'",
+            "name": "I can verify my login with \"OK\"",
             "match": {
               "arguments": [
                 {
@@ -201,5 +201,5 @@
         }
       }
     ],
-    "uri": "file:src/test/java/features/LoginWithDataFile.feature"
+    "uri": ""
   }]
